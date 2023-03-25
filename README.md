@@ -17,10 +17,13 @@
 * 微軟[北風貿易公司資料庫]MySQL版( http://code.google.com/p/northwindextended)
 ## GitHub範例，PHP+MySQL
 * [BookStore書店](https://github.com/ywxbear/PHP-Bookstore-Website-Example)
-## W3School的PHP教學
-* ex001.php
-* ex002.php
-* ex003.php
-* ex004.php
-* ex005.php
-* ex006.php
+## W3School的PHP教學 
+* [ex001.php](https://www.w3schools.com/php/php_mysql_connect.asp) 連接MySQL資料庫
+* [ex002.php](https://www.w3schools.com/php/php_mysql_create.asp) 新增資料庫
+* [ex003.php](https://www.w3schools.com/php/php_mysql_create_table.asp) 新增表格
+* [ex004.php](https://www.w3schools.com/php/php_mysql_insert.asp) 新增記錄
+* [ex005.php](https://www.w3schools.com/php/php_mysql_insert_multiple.asp) 新增多筆
+* [ex006.php](https://www.w3schools.com/php/php_mysql_prepared_statements.asp) 新增記錄
+## 作業
+* 使用 SAMPLE Database，新增記錄
+* [ex007.php] 以表單新增一筆記錄
