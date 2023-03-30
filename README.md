@@ -10,6 +10,7 @@
 * HTTP + APACHE 運作
 ## 安裝SAMPLE DATABASE
 * MySQL官方資料庫[內容參考資料](https://www3.ntu.edu.sg/home/ehchua/programming/sql/SampleDatabases.html)
+* MySQL官方資料庫[.sql檔](https://dev.mysql.com/doc/index-other.html)載點
 * MySQL官方[World世界資料庫](https://dev.mysql.com/doc/world-setup/en/)，國家200+、城市4000+、語言900+
 * MySQL官方[Sakila電影光碟租借資料庫](http://dev.mysql.com/doc/sakila/en/index.html.)，演員、電影
 * MySQLTutorial網站[Employees資料庫]()
