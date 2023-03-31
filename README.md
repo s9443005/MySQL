@@ -77,18 +77,23 @@
 ```
 ### 表格country的欄位及239筆國家資料
 ```
-MariaDB [world]> describe country;
-MariaDB [world]> select * from country;
-MariaDB [world]>
+  MariaDB [world]> describe country;
+  MariaDB [world]> select * from country;
+  MariaDB [world]>
 ```
 ### 表格countrylanguage的欄位及984筆語言資料
 ```
-MariaDB [world]> describe countrylanguage;
-MariaDB [world]> select * from countrylanguage;
-MariaDB [world]>
+  MariaDB [world]> describe countrylanguage;
+  MariaDB [world]> select * from countrylanguage;
+  MariaDB [world]>
 ```
-### SQL練習
-* 切換到WORLD資料庫
+## WORLD資料庫SQL練習
+* 首先要瞭解WORLD資料庫的Schema
+### 切換到WORLD資料庫
+```
+  MariaDB [none]> use world;
+  MariaDB [world]>
+```
 * 查看此DATABASE所有TABLES
 * 顯示CITY表格所有內容
 * 顯示所有有收錄CITY的國家代碼
