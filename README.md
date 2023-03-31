@@ -25,6 +25,17 @@
 * [ex004.php](https://www.w3schools.com/php/php_mysql_insert.asp) 新增記錄
 * [ex005.php](https://www.w3schools.com/php/php_mysql_insert_multiple.asp) 新增多筆
 * [ex006.php](https://www.w3schools.com/php/php_mysql_prepared_statements.asp) 新增記錄
+## World世界資料庫教學
+### 瞭解SCHEMA及執行 [world.sql](https://downloads.mysql.com/docs/world-db.zip)
+* 幾個表格？
+* 表格的結構為何？
+### SQL練習
+* 切換到WORLD資料庫
+* 查看此DATABASE所有TABLES
+* 顯示CITY表格所有內容
+* 顯示所有有收錄CITY的國家代碼
+* 顯示人口大於5百萬的城市
+* 上題排序
 ## 作業
 * 使用 SAMPLE Database，新增記錄
 * [ex007.php] 以表單新增一筆記錄
