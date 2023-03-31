@@ -26,7 +26,55 @@
 * [ex005.php](https://www.w3schools.com/php/php_mysql_insert_multiple.asp) 新增多筆
 * [ex006.php](https://www.w3schools.com/php/php_mysql_prepared_statements.asp) 新增記錄
 ## World世界資料庫教學
-### 瞭解SCHEMA及執行 [world.sql](https://downloads.mysql.com/docs/world-db.zip)
+### 解壓及建立資料庫[world.sql](https://downloads.mysql.com/docs/world-db.zip)
+  ```
+  C:\xampp\mysql\bin>mysql -u root -p
+  Enter password:
+     ...中間略
+  MariaDB [(none)]>source world-db\world.sql
+     ...中間略
+  MariaDB [world]>
+```
+* 世界資料庫WORLD共有三個TABLES
+```
+  MariaDB [world]> show tables;
+  +-----------------+
+  | Tables_in_world |
+  +-----------------+
+  | city            |
+  | country         |
+  | countrylanguage |
+  +-----------------+
+  3 rows in set (0.001 sec)
+
+  MariaDB [world]>
+```
+* 每個資料庫SCHEMA及資料
+```
+  MariaDB [world]> describe city;
+  +-------------+----------+------+-----+---------+----------------+
+  | Field       | Type     | Null | Key | Default | Extra          |
+  +-------------+----------+------+-----+---------+----------------+
+  | ID          | int(11)  | NO   | PRI | NULL    | auto_increment |
+  | Name        | char(35) | NO   |     |         |                |
+  | CountryCode | char(3)  | NO   | MUL |         |                |
+  | District    | char(20) | NO   |     |         |                |
+  | Population  | int(11)  | NO   |     | 0       |                |
+  +-------------+----------+------+-----+---------+----------------+
+  5 rows in set (0.021 sec)
+
+  MariaDB [world]> select * from city;
+  +------+-----------------------------------+-------------+----------------------+------------+
+  | ID   | Name                              | CountryCode | District             | Population |
+  +------+-----------------------------------+-------------+----------------------+------------+
+  |    1 | Kabul                             | AFG         | Kabol                |    1780000 |
+   ...中間略
+  | 4079 | Rafah                             | PSE         | Rafah                |      92020 |
+  +------+-----------------------------------+-------------+----------------------+------------+
+  4079 rows in set (0.007 sec)
+  
+  MariaDB [world]>
+```
 * 幾個表格？
 * 表格的結構為何？
 ### SQL練習
