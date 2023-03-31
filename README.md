@@ -35,7 +35,7 @@
      ...中間略
   MariaDB [world]>
 ```
-* 世界資料庫WORLD共有三個TABLES
+### 世界資料庫WORLD共有三個TABLES
 ```
   MariaDB [world]> show tables;
   +-----------------+
@@ -49,7 +49,7 @@
 
   MariaDB [world]>
 ```
-* 表格city的欄位及4079筆城市資料
+### 表格city的欄位及4079筆城市資料
 ```
   MariaDB [world]> describe city;
   +-------------+----------+------+-----+---------+----------------+
@@ -75,8 +75,18 @@
   
   MariaDB [world]>
 ```
-* 表格city的欄位及4079筆城市資料
-* 表格的結構為何？
+### 表格country的欄位及239筆國家資料
+```
+MariaDB [world]> describe country;
+MariaDB [world]> select * from country;
+MariaDB [world]>
+```
+### 表格countrylanguage的欄位及984筆語言資料
+```
+MariaDB [world]> describe countrylanguage;
+MariaDB [world]> select * from countrylanguage;
+MariaDB [world]>
+```
 ### SQL練習
 * 切換到WORLD資料庫
 * 查看此DATABASE所有TABLES
