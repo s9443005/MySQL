@@ -129,9 +129,10 @@
 
   MariaDB [sakila]>
 ```
-### 可以試著演員actor表格的結構及內容
-* 共有4個欄位和200個演員
+### 檢視actor演員表格的結構及內容
+* 共有4個欄位
 ```
+  MariaDB [sakila]>
   MariaDB [sakila]> describe actor;
   +-------------+----------------------+------+-----+---------------------+-------------------------------+
   | Field       | Type                 | Null | Key | Default             | Extra                         |
@@ -142,7 +143,12 @@
   | last_update | timestamp            | NO   |     | current_timestamp() | on update current_timestamp() |
   +-------------+----------------------+------+-----+---------------------+-------------------------------+
   4 rows in set (0.018 sec)
-
+  MariaDB [sakila]>
+```
+* 共有200個演員
+* 猜測：此表格記錄演員真實姓名
+```
+  MariaDB [sakila]>
   MariaDB [sakila]> select * from actor;
   +----------+-------------+--------------+---------------------+
   | actor_id | first_name  | last_name    | last_update         |
@@ -157,7 +163,28 @@
 
   MariaDB [sakila]>
 ```
-* 演員表過的電影
+### 檢視actor_info演員資訊表格的結構及內容
+* 共有4個欄位
+  ```
+  MariaDB [sakila]>
+  MariaDB [sakila]> describe actor_info;
+  +------------+----------------------+------+-----+---------+-------+
+  | Field      | Type                 | Null | Key | Default | Extra |
+  +------------+----------------------+------+-----+---------+-------+
+  | actor_id   | smallint(5) unsigned | NO   |     | 0       |       |
+  | first_name | varchar(45)          | NO   |     | NULL    |       |
+  | last_name  | varchar(45)          | NO   |     | NULL    |       |
+  | film_info  | mediumtext           | YES  |     | NULL    |       |
+  +------------+----------------------+------+-----+---------+-------+
+  4 rows in set (0.027 sec)
+
+  MariaDB [sakila]>
+```
+* 共有200個演員資訊
+* 猜測：猜不出來第4個欄位是什麼？actor和actor_info關聯？
+```
+    ...中間略
+```
 ## 作業
 * 使用 SAMPLE Database，新增記錄
 * [ex007.php] 以表單新增一筆記錄
