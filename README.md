@@ -27,7 +27,7 @@
 * [ex006.php](https://www.w3schools.com/php/php_mysql_prepared_statements.asp) 新增記錄
 ## World世界資料庫教學
 ### 解壓及建立資料庫[world.sql](https://downloads.mysql.com/docs/world-db.zip)
-  ```
+```
   C:\xampp\mysql\bin>mysql -u root -p
   Enter password:
      ...中間略
@@ -103,7 +103,7 @@
 ### 解壓及建立資料庫[sakila-db.zip](https://downloads.mysql.com/docs/sakila-db.zip)
 * ZIP檔解壓到適當的地方，例如 C:\xampp\mysql\bin>，可以直接叫
 * 解壓後有2個 .sql 檔，sakila-schema.sql建立資料庫及其23個表格，sakila-data.sql建立記錄
-  ```
+```
   C:\xampp\mysql\bin>mysql -u root -p
   Enter password:
      ...中間略...
