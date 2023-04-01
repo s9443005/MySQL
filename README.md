@@ -129,8 +129,34 @@
 
   MariaDB [sakila]>
 ```
-### 可以試著看看幾個表格的內容
-* 演員表200人
+### 可以試著演員actor表格的結構及內容
+* 共有4個欄位和200個演員
+```
+  MariaDB [sakila]> describe actor;
+  +-------------+----------------------+------+-----+---------------------+-------------------------------+
+  | Field       | Type                 | Null | Key | Default             | Extra                         |
+  +-------------+----------------------+------+-----+---------------------+-------------------------------+
+  | actor_id    | smallint(5) unsigned | NO   | PRI | NULL                | auto_increment                |
+  | first_name  | varchar(45)          | NO   |     | NULL                |                               |
+  | last_name   | varchar(45)          | NO   | MUL | NULL                |                               |
+  | last_update | timestamp            | NO   |     | current_timestamp() | on update current_timestamp() |
+  +-------------+----------------------+------+-----+---------------------+-------------------------------+
+  4 rows in set (0.018 sec)
+
+  MariaDB [sakila]> select * from actor;
+  +----------+-------------+--------------+---------------------+
+  | actor_id | first_name  | last_name    | last_update         |
+  +----------+-------------+--------------+---------------------+
+  |        1 | PENELOPE    | GUINESS      | 2006-02-15 04:34:33 |
+  |        2 | NICK        | WAHLBERG     | 2006-02-15 04:34:33 |
+    ...中間略...
+  |      199 | JULIA       | FAWCETT      | 2006-02-15 04:34:33 |
+  |      200 | THORA       | TEMPLE       | 2006-02-15 04:34:33 |
+  +----------+-------------+--------------+---------------------+
+  200 rows in set (0.001 sec)
+
+  MariaDB [sakila]>
+```
 * 演員表過的電影
 ## 作業
 * 使用 SAMPLE Database，新增記錄
