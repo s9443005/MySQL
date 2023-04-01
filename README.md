@@ -86,7 +86,7 @@
   MariaDB [world]> describe countrylanguage;
   MariaDB [world]> select * from countrylanguage;
   MariaDB [world]>
-```口
+```
 ## WORLD資料庫SQL練習
 * 首先要瞭解WORLD資料庫的Schema
 ### 切換到WORLD資料庫
