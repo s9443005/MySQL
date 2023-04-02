@@ -9,14 +9,22 @@
 * HTTP APACHE Homepage
 * HTTP + APACHE 運作
 ## 安裝SAMPLE DATABASE
-* MySQL官方資料庫[內容參考資料](https://www3.ntu.edu.sg/home/ehchua/programming/sql/SampleDatabases.html)
-* MySQL官方資料庫[.sql檔](https://dev.mysql.com/doc/index-other.html)載點
-* MySQL官方[World世界資料庫](https://dev.mysql.com/doc/world-setup/en/)，國家200+、城市4000+、語言900+
-* MySQL官方[Sakila電影光碟租借資料庫](https://dev.mysql.com/doc/sakila/en/)，共有23個表格：電影、電影類別、類別、電影演員表、演員...等等
-* MySQLTutorial網站[Employees資料庫]()
-* MySQLTutorial網站[classicmodel經典資料庫](https://www.mysqltutorial.org/mysql-sample-database.aspx)，顧客、產品、訂單、雇員、ERD
-* 微軟[北風貿易公司資料庫]MySQL版( http://code.google.com/p/northwindextended)
+### MySQL官方資料庫
+* 由MySQL官方提供的範例資料庫
+* 新加坡大學教學網頁：[內容參考資料](https://www3.ntu.edu.sg/home/ehchua/programming/sql/SampleDatabases.html)
+* MySQL官方資料庫官方[所有.sql檔](https://dev.mysql.com/doc/index-other.html)載點
+* 計有World世界資料庫(4000筆)、Sakila電影光碟租借資料庫、airportdb機場資料庫、menageriei資料庫(5000萬筆，大型DB)
+* MySQL官方World世界資料庫 [world.sql下載](https://dev.mysql.com/doc/world-setup/en/)，國家200+、城市4000+、語言900+
+* MySQL官方Sakila電影光碟租借資料庫 [sakila.sql](https://dev.mysql.com/doc/sakila/en/)，共有23個表格：電影、電影類別、類別、電影演員表、演員...等等
+* MySQL官方airportdb機場資料庫，官方稱大型DB共5000萬筆
+* MySQL官方menageriei資料庫
+### MySQLTutorial網站
+* 經典資料庫，因為真的很經典：顧客、產品、訂單、訂單明細、員工...
+* MySQLTutorial官方網站[classicmodel經典資料庫](https://www.mysqltutorial.org/mysql-sample-database.aspx)，
+### 微軟[北風貿易公司資料庫]MySQL版( http://code.google.com/p/northwindextended)
+* 老朋友著新裝
 ## GitHub範例，PHP+MySQL
+* GitHub熱心網友上傳的網頁內容，可做為練功之用
 * [BookStore書店](https://github.com/ywxbear/PHP-Bookstore-Website-Example)
 ## W3School的PHP教學 
 * [ex001.php](https://www.w3schools.com/php/php_mysql_connect.asp) 連接MySQL資料庫
